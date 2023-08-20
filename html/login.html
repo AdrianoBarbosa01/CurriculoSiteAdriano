@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <main>
+        <h1>Login</h1>
+        <form action="">
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="email" onchange="onChangeEmail()" />
+            </label>
+
+            <label for="password">
+                <span>Senha</span>
+                <input type="password" id="password" name="password" onchange="onChangePassword()">
+            </label>
+            <button1 class="clear" type="button" id="recovery-password-button" onclick="recoverPassword()">Recuperar Senha</button1>
+            <a class="senha" href="../html/cadastro.html"><span>Não tem conta? Crie uma!</span></a>
+
+            <button type="button" id="login-button" onclick="login()">Login</button>
+        </form>
+    </main>
+    <script src="../js/login.js"></script>
+    <script src="../js/validations.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyD1WaGcKmqUA4-tT80qjxMxXIQB8l1nXnY",
+            authDomain: "logincurriculosite.firebaseapp.com",
+            databaseURL: "https://logincurriculosite-default-rtdb.firebaseio.com",
+            projectId: "logincurriculosite",
+            storageBucket: "logincurriculosite.appspot.com",
+            messagingSenderId: "78554101134",
+            appId: "1:78554101134:web:a6f7526bdd0b05597760df",
+            measurementId: "G-9D4XTB6YLZ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+</body>
+
+</html>

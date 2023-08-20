@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<body>
+    <main>
+        <h1>Criar Conta</h1>
+        <div class="social-media">
+            <a href="../js/google.js">
+                <img id="logingoogle" src="../img/google.png" alt="Google">
+            </a>
+            <a href="https://logincurriculosite.firebaseapp.com/__/auth/handler">
+                <img src="../img/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OU</span>
+        </div>
+
+        <form action="">
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email">
+            </label>
+
+            <label for="password">
+                <span>Senha</span>
+                <input type="password" id="senha">
+            </label>
+            <a class="login" href="../html/login.html"><span>Já tem uma conta? Clique aqui!</span></a>
+
+            <button onclick="cadastrar()" type="button" id="button">Cadastrar</button>
+        </form>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

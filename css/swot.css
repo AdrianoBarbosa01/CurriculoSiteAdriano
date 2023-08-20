@@ -1,0 +1,130 @@
+body {
+    background-image: url(../img/feliz\ ou\ nao.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.textq {
+    margin: 70px;
+}
+
+.inner {
+    padding-bottom: 200px;
+}
+
+.fundo {
+    background-color: #000000;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 05px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #494949;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.div1 {
+    bottom: 60px;
+}
+
+table {
+    border-collapse: separate;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: #000000;
+    font-weight: 600;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #2ecc71;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.efeito {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+.efeito::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.efeito:hover::after {
+    width: 100%;
+}

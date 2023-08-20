@@ -1,0 +1,40 @@
+body {
+    background-image: url(../img/hot-air-balloon-736879.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.efeito {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+.efeito::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.efeito:hover::after {
+    width: 100%;
+}

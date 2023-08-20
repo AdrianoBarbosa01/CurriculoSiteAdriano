@@ -1,0 +1,210 @@
+body {
+    background-image: url(../img/leao.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.efeito {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+.efeito::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.efeito:hover::after {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 05px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #494949;
+}
+
+.inner {
+    padding-bottom: 20px;
+}
+
+.fundo {
+    background-color: #000000;
+}
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.quandoimg1 {
+    background-color: #fff;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 60px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: #000000;
+    box-shadow: 05px 05px 05px 02px #686868;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -90px;
+    margin-left: 120px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.textq {
+    margin: 70px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    margin: 60px 10px 0px 50px;
+}
+
+.img {
+    background-color: #000000;
+    border-radius: 70px;
+    width: 130px;
+    height: 130px;
+    border: #000000;
+}
+
+.cmc {
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    background: #010107;
+    text-align: center;
+}
+
+.box {
+    width: 65px;
+    height: 68px;
+    display: inline-flex;
+    padding: 9px;
+    margin: 0.6rem 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.box:hover {
+    width: 210px;
+    background: #c32aa3;
+    border-radius: 55px;
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+    box-shadow: 0 0 50px #ff00c87c;
+}
+
+.box2:hover {
+    background: #25d366;
+    box-shadow: 0 0 50px #25d3657e;
+}
+
+.box3:hover {
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+}
+
+.box4:hover {
+    background: #1da1f2;
+    box-shadow: 0 0 50px #1da0f280;
+}
+
+p {
+    transform: translate(60px);
+    margin: auto 0px;
+}
+
+.navbar1 {
+    transform: translate(60px);
+}
+
+.box .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+
+.instagram {
+    background-color: #c32aa3;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.box:hover .icon {
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+}
